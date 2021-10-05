@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         cardView2 = findViewById(R.id.cv_qr2)
         btnScan = findViewById(R.id.btn_scan)
         btnEnterCode = findViewById(R.id.btn_enter_code)
-        edtCode = findViewById(R.id.edt_Code)
+        edtCode = findViewById(R.id.edt_code)
         tvText = findViewById(R.id.tv_title)
 
         hide = AnimationUtils.loadAnimation(this, android.R.anim.fade_out)
