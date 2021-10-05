@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="QR Code Scanner"
+        android:text=""
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -27,20 +27,23 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
+        android:visibility="gone"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title">
 
         <EditText
+            android:id="@+id/edt_Code"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter Code Here"
             android:padding="10dp"
             android:textColor="@color/black"
-            android:visibility="gone"
+            android:visibility="visible"
             tools:ignore="HardcodedText" />
 
     </androidx.cardview.widget.CardView>
@@ -54,9 +57,10 @@
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="10dp"
         app:cardElevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cv_qr1">
+        app:layout_constraintTop_toBottomOf="@+id/tv_title">
 
         <ImageView
             android:layout_width="match_parent"
@@ -96,7 +100,7 @@
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:backgroundTint="@color/dark_green"
-            android:text="EnterCode"
+            android:text="Enter Code"
             android:textColor="@color/black"
             tools:ignore="HardcodedText" />
 
