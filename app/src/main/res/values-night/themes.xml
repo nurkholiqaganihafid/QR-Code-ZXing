@@ -15,7 +15,10 @@
 
         <item name="colorPrimaryDark">@color/dark_green</item>
         <item name="colorAccent">@color/white</item>
+    </style>
 
-
+    <!-- My Custom TV. -->
+    <style name="myCustomText" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
     </style>
 </resources>
