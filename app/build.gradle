@@ -43,4 +43,11 @@ dependencies {
 
     // Cardview
     implementation "androidx.cardview:cardview:1.0.0"
+
+    // For developers using AndroidX in their applications
+    implementation 'pub.devrel:easypermissions:3.0.0'
+
+    // ZXing Android Embedded
+    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
 }
